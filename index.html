@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website profil personal dengan menu CV, portofolio, dan kontak." />
+    <title>Profil Saya</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="home">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Nama Saya</a>
+
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Navigasi utama">
+          <ul class="nav-list">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#projects">Portofolio</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="hero-subtitle">Halo, saya</p>
+            <h1 id="hero-title" class="hero-title">[Nama Anda]</h1>
+            <p class="hero-text">
+              Saya adalah seorang profesional yang bersemangat tentang teknologi, desain, dan membangun
+              solusi yang bermanfaat. Selamat datang di situs saya — jelajahi menu untuk melihat lebih
+              banyak tentang saya.
+            </p>
+
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#cv">Lihat CV</a>
+              <a class="btn btn-outline" href="#contact">Hubungi Saya</a>
+            </div>
+          </div>
+
+          <div class="hero-media" aria-hidden="true">
+            <div class="hero-card">
+              <div class="hero-card__photo" role="img" aria-label="Foto profil"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title" class="section-title">Tentang Saya</h2>
+          <div class="grid two-col">
+            <div>
+              <p>
+                Perkenalkan, saya [Nama Anda], seorang [pekerjaan / keahlian utama] yang
+                fokus pada [bidang minat]. Saya menyukai tantangan baru dan selalu ingin
+                belajar hal-hal baru agar bisa memberikan hasil terbaik.
+              </p>
+              <p>
+                Di luar pekerjaan, saya menikmati [hobi 1], [hobi 2], dan [hobi 3].
+                Nilai-nilai saya adalah kolaborasi, ketelitian, dan berfokus pada dampak.
+              </p>
+            </div>
+
+            <div class="facts">
+              <div class="fact">
+                <h3>10+ Tahun</h3>
+                <p>Pengalaman profesional</p>
+              </div>
+              <div class="fact">
+                <h3>30+ Proyek</h3>
+                <p>Diselesaikan untuk berbagai klien</p>
+              </div>
+              <div class="fact">
+                <h3>4+ Bahasa</h3>
+                <p>Digunakan dalam komunikasi & pekerjaan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="cv" aria-labelledby="cv-title">
+        <div class="container">
+          <h2 id="cv-title" class="section-title">Curriculum Vitae</h2>
+
+          <div class="grid two-col">
+            <div>
+              <h3 class="section-subtitle">Ringkasan</h3>
+              <p>
+                Saya memiliki pengalaman di bidang [bidang], mengelola tim, dan mengembangkan
+                produk/layanan yang memberikan dampak positif. Kompetensi inti saya termasuk
+                [skill 1], [skill 2], dan [skill 3].
+              </p>
+
+              <h3 class="section-subtitle">Keahlian Utama</h3>
+              <ul class="skills">
+                <li>Desain UI/UX</li>
+                <li>Pengembangan Frontend</li>
+                <li>Manajemen Proyek</li>
+                <li>Optimisasi Kinerja</li>
+                <li>Pembuatan Dokumentasi</li>
+              </ul>
+
+              <a class="btn btn-primary" href="cv.pdf" download>
+                Unduh CV (PDF)
+              </a>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-item">
+                <h4>2024 – Sekarang</h4>
+                <p><strong>[Posisi Saat Ini]</strong> di [Perusahaan].</p>
+                <p>Memimpin [tim/proyek] untuk mencapai [hasil/kunci].</p>
+              </article>
+              <article class="timeline-item">
+                <h4>2021 – 2024</h4>
+                <p><strong>[Posisi Sebelumnya]</strong> di [Perusahaan].</p>
+                <p>Mengembangkan [fitur/proyek] yang meningkatkan [metrik].</p>
+              </article>
+              <article class="timeline-item">
+                <h4>2018 – 2021</h4>
+                <p><strong>[Posisi Awal]</strong> di [Perusahaan].</p>
+                <p>Bekerja pada [jenis proyek] dan membangun fondasi teknis yang kuat.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title" class="section-title">Portofolio</h2>
+          <p class="section-lead">
+            Beberapa contoh proyek yang mencerminkan pendekatan dan hasil kerja saya.
+          </p>
+
+          <div class="grid three-col projects">
+            <article class="project-card">
+              <h3>Proyek A</h3>
+              <p>
+                Deskripsi singkat tentang proyek A, masalah yang diselesaikan, dan dampak yang
+                dihasilkan.
+              </p>
+              <a class="project-link" href="#" aria-label="Lihat detail proyek A">Lihat selengkapnya</a>
+            </article>
+
+            <article class="project-card">
+              <h3>Proyek B</h3>
+              <p>
+                Deskripsi singkat tentang proyek B, teknologi yang digunakan, dan hasilnya.
+              </p>
+              <a class="project-link" href="#" aria-label="Lihat detail proyek B">Lihat selengkapnya</a>
+            </article>
+
+            <article class="project-card">
+              <h3>Proyek C</h3>
+              <p>
+                Deskripsi singkat tentang proyek C dan dampak yang dihasilkan bagi pengguna.
+              </p>
+              <a class="project-link" href="#" aria-label="Lihat detail proyek C">Lihat selengkapnya</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title" class="section-title">Hubungi Saya</h2>
+          <p class="section-lead">
+            Ingin berkolaborasi, berdiskusi, atau sekadar mengatakan halo? Kirimkan pesan melalui
+            formulir berikut atau temukan saya di platform di bawah.
+          </p>
+
+          <div class="grid two-col contact-grid">
+            <div class="contact-card">
+              <h3>Alamat</h3>
+              <p>[Kota], [Negara]</p>
+
+              <h3>Email</h3>
+              <p><a href="mailto:email@contoh.com">email@contoh.com</a></p>
+
+              <h3>Telepon</h3>
+              <p><a href="tel:+621234567890">+62 123 4567 890</a></p>
+
+              <div class="socials">
+                <a href="#" aria-label="GitHub" class="social">GitHub</a>
+                <a href="#" aria-label="LinkedIn" class="social">LinkedIn</a>
+                <a href="#" aria-label="Twitter" class="social">Twitter</a>
+              </div>
+            </div>
+
+            <form class="contact-form" action="#" method="POST" onsubmit="return false;">
+              <label>
+                Nama
+                <input type="text" name="name" placeholder="Nama lengkap" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="email@domain.com" required />
+              </label>
+              <label>
+                Pesan
+                <textarea name="message" placeholder="Tulis pesan ..." rows="5" required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> [Nama Anda]. Semua hak cipta dilindungi.</p>
+        <p>
+          Dibuat dengan ❤️
+          <span class="footer-meta">• HTML • CSS •</span>
+          <span class="footer-meta">Responsif • Modern</span>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.site-nav');
+
+      navToggle?.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        nav?.classList.toggle('is-open');
+      });
+
+      // Close nav on link click (mobile)
+      document.querySelectorAll('.site-nav a').forEach((link) => {
+        link.addEventListener('click', () => {
+          nav?.classList.remove('is-open');
+          navToggle?.setAttribute('aria-expanded', 'false');
+        });
+      });
+    </script>
+  </body>
+</html>
