@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website profil personal dengan menu CV, portofolio, dan kontak." />
-    <title>Profil Saya</title>
+    <meta name="description" content="Portofolio pribadi dengan projek, CV, dan kontak." />
+    <title>[Nama Anda] — Portofolio</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header class="site-header" id="home">
       <div class="container header-inner">
-        <a class="brand" href="#home">Nama Saya</a>
-
-        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
-          <span class="hamburger"></span>
-        </button>
+        <a class="brand" href="#home">[Nama Anda]</a>
 
         <nav class="site-nav" aria-label="Navigasi utama">
-          <ul class="nav-list">
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#projects">Portofolio</a></li>
-            <li><a href="#contact">Kontak</a></li>
-          </ul>
+          <a class="navlink" href="#home">Beranda</a>
+          <a class="navlink" href="#projects">Proyek</a>
+          <a class="navlink" href="#cv">CV</a>
+          <a class="navlink" href="#contact">Kontak</a>
         </nav>
+
+        <button class="theme-toggle" aria-label="Ganti tema">🌙</button>
       </div>
     </header>
 
@@ -42,102 +36,37 @@
             <p class="hero-subtitle">Halo, saya</p>
             <h1 id="hero-title" class="hero-title">[Nama Anda]</h1>
             <p class="hero-text">
-              Saya adalah seorang profesional yang bersemangat tentang teknologi, desain, dan membangun
-              solusi yang bermanfaat. Selamat datang di situs saya — jelajahi menu untuk melihat lebih
-              banyak tentang saya.
+              Saya membuat antarmuka, aplikasi, dan pengalaman digital yang jelas, cepat, dan
+              elegan. Di sini Anda bisa melihat beberapa proyek terbaik yang telah saya kerjakan.
             </p>
 
             <div class="cta-group">
-              <a class="btn btn-primary" href="#cv">Lihat CV</a>
-              <a class="btn btn-outline" href="#contact">Hubungi Saya</a>
+              <a class="btn" href="#projects">Lihat Proyek</a>
+              <a class="btn btn-ghost" href="#contact">Hubungi Saya</a>
+            </div>
+
+            <div class="chips">
+              <span class="chip">UI/UX</span>
+              <span class="chip">Web</span>
+              <span class="chip">Design</span>
+              <span class="chip">Javascript</span>
             </div>
           </div>
 
-          <div class="hero-media" aria-hidden="true">
-            <div class="hero-card">
-              <div class="hero-card__photo" role="img" aria-label="Foto profil"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="about" aria-labelledby="about-title">
-        <div class="container">
-          <h2 id="about-title" class="section-title">Tentang Saya</h2>
-          <div class="grid two-col">
-            <div>
-              <p>
-                Perkenalkan, saya [Nama Anda], seorang [pekerjaan / keahlian utama] yang
-                fokus pada [bidang minat]. Saya menyukai tantangan baru dan selalu ingin
-                belajar hal-hal baru agar bisa memberikan hasil terbaik.
-              </p>
-              <p>
-                Di luar pekerjaan, saya menikmati [hobi 1], [hobi 2], dan [hobi 3].
-                Nilai-nilai saya adalah kolaborasi, ketelitian, dan berfokus pada dampak.
-              </p>
-            </div>
-
-            <div class="facts">
-              <div class="fact">
-                <h3>10+ Tahun</h3>
-                <p>Pengalaman profesional</p>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="panel">
+              <div class="panel-header">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
-              <div class="fact">
-                <h3>30+ Proyek</h3>
-                <p>Diselesaikan untuk berbagai klien</p>
+              <div class="panel-body">
+                <div class="panel-grid">
+                  <div class="panel-cell"></div>
+                  <div class="panel-cell"></div>
+                  <div class="panel-cell"></div>
+                </div>
               </div>
-              <div class="fact">
-                <h3>4+ Bahasa</h3>
-                <p>Digunakan dalam komunikasi & pekerjaan</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--alt" id="cv" aria-labelledby="cv-title">
-        <div class="container">
-          <h2 id="cv-title" class="section-title">Curriculum Vitae</h2>
-
-          <div class="grid two-col">
-            <div>
-              <h3 class="section-subtitle">Ringkasan</h3>
-              <p>
-                Saya memiliki pengalaman di bidang [bidang], mengelola tim, dan mengembangkan
-                produk/layanan yang memberikan dampak positif. Kompetensi inti saya termasuk
-                [skill 1], [skill 2], dan [skill 3].
-              </p>
-
-              <h3 class="section-subtitle">Keahlian Utama</h3>
-              <ul class="skills">
-                <li>Desain UI/UX</li>
-                <li>Pengembangan Frontend</li>
-                <li>Manajemen Proyek</li>
-                <li>Optimisasi Kinerja</li>
-                <li>Pembuatan Dokumentasi</li>
-              </ul>
-
-              <a class="btn btn-primary" href="cv.pdf" download>
-                Unduh CV (PDF)
-              </a>
-            </div>
-
-            <div class="timeline">
-              <article class="timeline-item">
-                <h4>2024 – Sekarang</h4>
-                <p><strong>[Posisi Saat Ini]</strong> di [Perusahaan].</p>
-                <p>Memimpin [tim/proyek] untuk mencapai [hasil/kunci].</p>
-              </article>
-              <article class="timeline-item">
-                <h4>2021 – 2024</h4>
-                <p><strong>[Posisi Sebelumnya]</strong> di [Perusahaan].</p>
-                <p>Mengembangkan [fitur/proyek] yang meningkatkan [metrik].</p>
-              </article>
-              <article class="timeline-item">
-                <h4>2018 – 2021</h4>
-                <p><strong>[Posisi Awal]</strong> di [Perusahaan].</p>
-                <p>Bekerja pada [jenis proyek] dan membangun fondasi teknis yang kuat.</p>
-              </article>
             </div>
           </div>
         </div>
@@ -145,63 +74,153 @@
 
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="container">
-          <h2 id="projects-title" class="section-title">Portofolio</h2>
-          <p class="section-lead">
-            Beberapa contoh proyek yang mencerminkan pendekatan dan hasil kerja saya.
-          </p>
-
-          <div class="grid three-col projects">
-            <article class="project-card">
-              <h3>Proyek A</h3>
-              <p>
-                Deskripsi singkat tentang proyek A, masalah yang diselesaikan, dan dampak yang
-                dihasilkan.
+          <div class="section-head">
+            <div>
+              <h2 id="projects-title" class="section-title">Portofolio</h2>
+              <p class="section-lead">
+                Beberapa proyek terbaru yang saya kerjakan, dibuat dengan fokus pada kinerja dan
+                pengalaman pengguna.
               </p>
-              <a class="project-link" href="#" aria-label="Lihat detail proyek A">Lihat selengkapnya</a>
+            </div>
+
+            <div class="filter">
+              <button class="filter-btn active" data-filter="all">Semua</button>
+              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="design">Design</button>
+              <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+          </div>
+
+          <div class="grid project-grid">
+            <article class="project-card" data-category="web">
+              <div class="project-media"></div>
+              <div class="project-body">
+                <h3>Dashboard Analitik</h3>
+                <p>
+                  Panel web interaktif untuk memantau data dan metrik kunci secara real‑time.
+                </p>
+                <div class="project-tags">
+                  <span class="chip">React</span>
+                  <span class="chip">D3</span>
+                </div>
+              </div>
+              <a class="project-action" href="#">Lihat detail</a>
             </article>
 
-            <article class="project-card">
-              <h3>Proyek B</h3>
-              <p>
-                Deskripsi singkat tentang proyek B, teknologi yang digunakan, dan hasilnya.
-              </p>
-              <a class="project-link" href="#" aria-label="Lihat detail proyek B">Lihat selengkapnya</a>
+            <article class="project-card" data-category="design">
+              <div class="project-media"></div>
+              <div class="project-body">
+                <h3>Branding & UI Kit</h3>
+                <p>
+                  Sistem desain lengkap termasuk guideline tipografi, warna, dan komponen.
+                </p>
+                <div class="project-tags">
+                  <span class="chip">Figma</span>
+                  <span class="chip">Design System</span>
+                </div>
+              </div>
+              <a class="project-action" href="#">Lihat detail</a>
             </article>
 
-            <article class="project-card">
-              <h3>Proyek C</h3>
-              <p>
-                Deskripsi singkat tentang proyek C dan dampak yang dihasilkan bagi pengguna.
-              </p>
-              <a class="project-link" href="#" aria-label="Lihat detail proyek C">Lihat selengkapnya</a>
+            <article class="project-card" data-category="tools">
+              <div class="project-media"></div>
+              <div class="project-body">
+                <h3>CLI Utilities</h3>
+                <p>
+                  Kumpulan skrip dan alat command line untuk mempercepat workflow harian.
+                </p>
+                <div class="project-tags">
+                  <span class="chip">Node.js</span>
+                  <span class="chip">Productivity</span>
+                </div>
+              </div>
+              <a class="project-action" href="#">Lihat detail</a>
+            </article>
+
+            <article class="project-card" data-category="web">
+              <div class="project-media"></div>
+              <div class="project-body">
+                <h3>Micro-site Portfolio</h3>
+                <p>
+                  Situs portofolio responsif dengan animasi halus dan performa tinggi.
+                </p>
+                <div class="project-tags">
+                  <span class="chip">HTML</span>
+                  <span class="chip">CSS</span>
+                </div>
+              </div>
+              <a class="project-action" href="#">Lihat detail</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <section class="section section--alt" id="cv" aria-labelledby="cv-title">
         <div class="container">
-          <h2 id="contact-title" class="section-title">Hubungi Saya</h2>
+          <h2 id="cv-title" class="section-title">CV & Pengalaman</h2>
+          <div class="grid two-col">
+            <div class="panel">
+              <h3 class="section-subtitle">Ringkasan</h3>
+              <p>
+                Saya adalah [pekerjaan / keahlian utama] yang fokus pada kualitas, kecepatan,
+                dan pengalaman pengguna. Saya suka bekerja dengan tim kecil yang gesit dan
+                menyukai proses iterasi.
+              </p>
+
+              <h3 class="section-subtitle">Keahlian</h3>
+              <ul class="skills">
+                <li>UI/UX Design</li>
+                <li>Responsive Web</li>
+                <li>JavaScript / TypeScript</li>
+                <li>Tooling & Workflow</li>
+                <li>Performance Optimization</li>
+              </ul>
+
+              <div class="cta-group">
+                <a class="btn" href="cv.pdf" download>Unduh CV</a>
+                <a class="btn btn-ghost" href="#contact">Hubungi</a>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <article class="timeline-item">
+                <span class="timeline-label">2024</span>
+                <h4>[Posisi Saat Ini] — [Perusahaan]</h4>
+                <p>Mengembangkan produk untuk pengguna besar dengan fokus pada performa.</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-label">2021</span>
+                <h4>[Posisi Sebelumnya] — [Perusahaan]</h4>
+                <p>Mendirikan sistem desain dan mempercepat proses rilis.</p>
+              </article>
+              <article class="timeline-item">
+                <span class="timeline-label">2018</span>
+                <h4>[Posisi Awal] — [Perusahaan]</h4>
+                <p>Membangun landasan teknis dan otomatisasi workflow.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title" class="section-title">Kontak</h2>
           <p class="section-lead">
-            Ingin berkolaborasi, berdiskusi, atau sekadar mengatakan halo? Kirimkan pesan melalui
-            formulir berikut atau temukan saya di platform di bawah.
+            Ingin kolaborasi atau diskusi? Kirim pesan atau temukan saya di platform di bawah.
           </p>
 
           <div class="grid two-col contact-grid">
-            <div class="contact-card">
-              <h3>Alamat</h3>
-              <p>[Kota], [Negara]</p>
-
-              <h3>Email</h3>
-              <p><a href="mailto:email@contoh.com">email@contoh.com</a></p>
-
-              <h3>Telepon</h3>
-              <p><a href="tel:+621234567890">+62 123 4567 890</a></p>
+            <div class="panel contact-card">
+              <h3>Info Kontak</h3>
+              <p><strong>Email</strong><br /><a href="mailto:email@contoh.com">email@contoh.com</a></p>
+              <p><strong>Telepon</strong><br /><a href="tel:+621234567890">+62 123 4567 890</a></p>
+              <p><strong>Lokasi</strong><br />[Kota], [Negara]</p>
 
               <div class="socials">
-                <a href="#" aria-label="GitHub" class="social">GitHub</a>
-                <a href="#" aria-label="LinkedIn" class="social">LinkedIn</a>
-                <a href="#" aria-label="Twitter" class="social">Twitter</a>
+                <a class="social" href="#" aria-label="GitHub">GitHub</a>
+                <a class="social" href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a class="social" href="#" aria-label="Twitter">Twitter</a>
               </div>
             </div>
 
@@ -218,7 +237,7 @@
                 Pesan
                 <textarea name="message" placeholder="Tulis pesan ..." rows="5" required></textarea>
               </label>
-              <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+              <button class="btn" type="submit">Kirim Pesan</button>
             </form>
           </div>
         </div>
@@ -228,11 +247,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>&copy; <span id="year"></span> [Nama Anda]. Semua hak cipta dilindungi.</p>
-        <p>
-          Dibuat dengan ❤️
-          <span class="footer-meta">• HTML • CSS •</span>
-          <span class="footer-meta">Responsif • Modern</span>
-        </p>
+        <p class="footer-meta">Dibuat dengan ❤️ — HTML, CSS, & sedikit JS.</p>
       </div>
     </footer>
 
@@ -240,20 +255,27 @@
       const yearEl = document.getElementById('year');
       if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-      const navToggle = document.querySelector('.nav-toggle');
-      const nav = document.querySelector('.site-nav');
-
-      navToggle?.addEventListener('click', () => {
-        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', String(!expanded));
-        nav?.classList.toggle('is-open');
+      const toggle = document.querySelector('.theme-toggle');
+      const root = document.documentElement;
+      toggle?.addEventListener('click', () => {
+        root.classList.toggle('dark');
+        toggle.textContent = root.classList.contains('dark') ? '☀️' : '🌙';
       });
 
-      // Close nav on link click (mobile)
-      document.querySelectorAll('.site-nav a').forEach((link) => {
-        link.addEventListener('click', () => {
-          nav?.classList.remove('is-open');
-          navToggle?.setAttribute('aria-expanded', 'false');
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projects = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+
+          projects.forEach((project) => {
+            const category = project.dataset.category;
+            const isVisible = filter === 'all' || category === filter;
+            project.style.display = isVisible ? 'grid' : 'none';
+          });
         });
       });
     </script>
