@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muhamad Sholahuddin AL Ayubi — Portofolio</title>
+  <title>AL Ayubi — Portofolio</title>
   <meta name="description" content="Portfolio dengan projek, CV, dan kontak." />
   <link rel="icon" href="assets/Logo bys.webp" />
 
@@ -231,7 +231,7 @@
   <!-- Header / Navbar -->
   <header class="sticky top-0 z-50 backdrop-blur bg-slate-950/80 border-b border-slate-800">
     <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="#home" class="flex items-center gap-2 font-semibold"><span>Muhamad Sholahuddin AL Ayubi</span></a>
+      <a href="#home" class="flex items-center gap-2 font-semibold"><span>AL Ayubi</span></a>
       <div class="hidden md:flex items-center gap-2 text-sm">
         <a class="btn-ghost navlink px-2" href="#home">Beranda</a>
         <a class="btn-ghost navlink px-2" href="#about">Tentang</a>
@@ -738,11 +738,16 @@
     openImageModal(src, altText);
   });
 
-  // === Navbar menu ===
-  $('#menuBtn')?.addEventListener('click', () => $('#mobileMenu').classList.toggle('hidden'));
-
   // === Theme toggle ===
   const root = document.documentElement;
+  </script>
+  <script>
+    // Navbar menu toggle for mobile (non-module for compatibility)
+    document.getElementById('menuBtn')?.addEventListener('click', function() {
+      const menu = document.getElementById('mobileMenu');
+      if(menu) menu.classList.toggle('hidden');
+    });
+  </script>
 
   // === Scrollspy (IntersectionObserver) ===
   const navlinks = $$('.navlink');
